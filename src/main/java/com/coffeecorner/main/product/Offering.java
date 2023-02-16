@@ -16,19 +16,19 @@ public abstract class Offering {
         this.price = price;
     }
 
-    protected String getName() {
+    public String getName() {
         return name;
     }
 
-    protected void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    protected BigDecimal getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
-    protected void setPrice(BigDecimal price) {
+    public void setPrice(BigDecimal price) {
         this.price = price;
     }
 }

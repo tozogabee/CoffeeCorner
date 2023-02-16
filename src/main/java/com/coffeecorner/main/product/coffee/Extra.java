@@ -12,4 +12,12 @@ public class Extra extends Offering {
     public Extra(String name, BigDecimal price) {
         super(name, price);
     }
+
+    @Override
+    public String toString() {
+        return "Extra{ " +
+                "name=" +this.getName()+
+                "price="+this.getPrice()+
+                "}";
+    }
 }

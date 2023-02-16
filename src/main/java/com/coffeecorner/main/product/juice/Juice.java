@@ -15,4 +15,21 @@ public class Juice extends Offering {
         super(name, price);
         this.size = size;
     }
+
+    public Double getSize() {
+        return size;
+    }
+
+    public void setSize(Double size) {
+        this.size = size;
+    }
+
+    @Override
+    public String toString() {
+        return "Juice{" +
+                "size=" + size +
+                "name=" + this.getName() +
+                "price=" + this.getPrice() +
+                '}';
+    }
 }
