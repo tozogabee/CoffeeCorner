@@ -17,7 +17,7 @@ public class Extra extends Offering {
     public String toString() {
         return "Extra{ " +
                 "name=" +this.getName()+
-                "price="+this.getPrice()+
+                " price="+this.getPrice()+
                 "}";
     }
 }

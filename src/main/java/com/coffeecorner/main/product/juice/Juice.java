@@ -1,12 +1,15 @@
 package com.coffeecorner.main.product.juice;
 
 import com.coffeecorner.main.product.Offering;
+import com.coffeecorner.main.product.coffee.Extra;
 
 import java.math.BigDecimal;
 
 public class Juice extends Offering {
 
     private Double size;
+
+    private Extra extra;
 
     public Juice() {
     }
@@ -22,6 +25,14 @@ public class Juice extends Offering {
 
     public void setSize(Double size) {
         this.size = size;
+    }
+
+    public Extra getExtra() {
+        return extra;
+    }
+
+    public void setExtra(Extra extra) {
+        this.extra = extra;
     }
 
     @Override
