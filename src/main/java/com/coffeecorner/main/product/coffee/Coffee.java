@@ -47,9 +47,11 @@ public class Coffee extends Offering {
     }
 
     public void addExtra(Extra extra) {
+        BigDecimal extraPrice = extra.getPrice();
+        BigDecimal actPrice = this.extras.stream().map(extra1 -> extra1.getPrice()).reduce(BigDecimal.ZERO, BigDecimal::add);
+        actPrice.add(extraPrice);
         this.extras.add(extra);
-        BigDecimal newPrice = extra.getPrice().add(this.getPrice());
-        this.setPrice(newPrice);
+        this.setPrice(actPrice);
     }
 
     @Override

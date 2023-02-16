@@ -31,4 +31,8 @@ public abstract class Offering {
     public void setPrice(BigDecimal price) {
         this.price = price;
     }
+
+    public BigDecimal sumPrice(BigDecimal price) {
+        return this.getPrice().add(price);
+    }
 }
